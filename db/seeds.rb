@@ -9,3 +9,7 @@
 10.times do |i|
   User.create(name: Faker::Name.name, email: Faker::Internet.unique.email)
 end
+
+10.times do |i|
+  Course.create(name: Faker::Name.name, author: User.create(name: Faker::Name.name,  email: Faker::Internet.unique.email))
+end
