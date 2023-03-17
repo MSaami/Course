@@ -11,5 +11,12 @@
 end
 
 10.times do |i|
-  Course.create(name: Faker::Name.name, author: User.create(name: Faker::Name.name,  email: Faker::Internet.unique.email))
+  Course.create(
+    name: Faker::Name.name,
+    author: User.create(name: Faker::Name.name,  email: Faker::Internet.unique.email)
+  )
+end
+
+2.times do |i|
+  LearningPath.create(name: Faker::ProgrammingLanguage.name)
 end
