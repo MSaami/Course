@@ -7,7 +7,7 @@ class LearningPathCreator
   end
 
   def call
-    raise CourseIsEmptyException if @courses.empty?
+    raise CourseIsEmptyException if @courses.compact_blank!.blank?
     learning_path = LearningPath.create!(name: @name)
     course_data = make_course_data(learning_path.id)
     Course.update(course_data.keys, course_data.values)
