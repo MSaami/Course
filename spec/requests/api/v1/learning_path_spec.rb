@@ -9,7 +9,7 @@ RSpec.describe "Api::V1::LearningPaths", type: :request do
       get '/api/v1/learning_paths'
       expect(response).to have_http_status(200)
       expect(json_body['data'].count).to eq 2
-      expect(json_body['data'][0]['attributes']['courses']['data'].count).to eq 5
+      expect(json_body['data'][0]['attributes']['courses']['data'].count).to eq 9
     end
   end
 
@@ -19,7 +19,7 @@ RSpec.describe "Api::V1::LearningPaths", type: :request do
       post '/api/v1/learning_paths', params: {learning_path: {name: 'Test', courses: courses.map(&:id)}}
       expect(response).to have_http_status(204)
       expect(LearningPath.last.courses.count).to eq(3)
-      expect(LearningPath.last.course_ids).to eq(courses.map(&:id))
+      expect(LearningPath.last.course_ids).to match_array(courses.map(&:id))
     end
 
     it 'returns 422 if course is empty' do

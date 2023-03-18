@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_16_150156) do
+ActiveRecord::Schema.define(version: 2023_03_18_195757) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,10 +26,30 @@ ActiveRecord::Schema.define(version: 2023_03_16_150156) do
     t.index ["learning_path_id"], name: "index_courses_on_learning_path_id"
   end
 
+  create_table "learning_path_enrollments", force: :cascade do |t|
+    t.bigint "talent_id", null: false
+    t.bigint "learning_path_id", null: false
+    t.bigint "next_course_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["learning_path_id"], name: "index_learning_path_enrollments_on_learning_path_id"
+    t.index ["next_course_id"], name: "index_learning_path_enrollments_on_next_course_id"
+    t.index ["talent_id"], name: "index_learning_path_enrollments_on_talent_id"
+  end
+
   create_table "learning_paths", force: :cascade do |t|
     t.string "name", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "talents_courses", force: :cascade do |t|
+    t.bigint "course_id", null: false
+    t.bigint "talent_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["course_id"], name: "index_talents_courses_on_course_id"
+    t.index ["talent_id"], name: "index_talents_courses_on_talent_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -42,4 +62,9 @@ ActiveRecord::Schema.define(version: 2023_03_16_150156) do
 
   add_foreign_key "courses", "learning_paths"
   add_foreign_key "courses", "users", column: "author_id"
+  add_foreign_key "learning_path_enrollments", "courses", column: "next_course_id"
+  add_foreign_key "learning_path_enrollments", "learning_paths"
+  add_foreign_key "learning_path_enrollments", "users", column: "talent_id"
+  add_foreign_key "talents_courses", "courses"
+  add_foreign_key "talents_courses", "users", column: "talent_id"
 end
