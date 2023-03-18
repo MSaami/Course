@@ -1,4 +1,4 @@
-class LearningPathCreator
+class LearningPathManager
   class CourseIsEmptyException < StandardError; end
 
   def initialize(name:, courses:)
@@ -8,7 +8,8 @@ class LearningPathCreator
 
   def call
     raise CourseIsEmptyException if @courses.compact_blank!.blank?
-    learning_path = LearningPath.create!(name: @name)
+    learning_path = LearningPath.find_or_initialize_by(name: @name)
+    learning_path.save!
     course_data = make_course_data(learning_path.id)
     Course.update(course_data.keys, course_data.values)
   end

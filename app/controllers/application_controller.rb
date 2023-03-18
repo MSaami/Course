@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
   rescue_from ActiveRecord::RecordInvalid, with: :show_record_errors
   rescue_from ActiveRecord::RecordNotFound, with: :not_found_response
-  rescue_from LearningPathCreator::CourseIsEmptyException, with: :course_is_empty
+  rescue_from LearningPathManager::CourseIsEmptyException, with: :course_is_empty
 
   def show_record_errors(errors)
     error_response(errors: errors.record.errors.full_messages, status: 422)

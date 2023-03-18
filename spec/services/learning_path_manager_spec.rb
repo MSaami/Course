@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe LearningPathCreator do
+RSpec.describe LearningPathManager do
   describe 'call' do
     it "create a learning path with courses" do
       courses = create_list(:course, 4)

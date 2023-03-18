@@ -27,4 +27,17 @@ RSpec.describe "Api::V1::LearningPaths", type: :request do
       expect(response).to have_http_status(422)
     end
   end
+
+  describe 'DELETE ' do
+    it "delete a learning path and nullify all courses" do
+      path = create(:learning_path)
+      course = create(:course, :with_learning_path, learning_path: path)
+
+      delete "/api/v1/learning_paths/#{path.id}"
+      expect(response).to have_http_status(204)
+      expect {path.reload}.to raise_error(ActiveRecord::RecordNotFound)
+      expect(course.reload.order_in_learning_path).to be nil
+      expect(course.learning_path_id).to be nil
+    end
+  end
 end
