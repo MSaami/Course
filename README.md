@@ -22,6 +22,7 @@ bundle install
 
 ## DB Diagram
 
+![DB](https://user-images.githubusercontent.com/27271223/226191721-02545369-4aeb-4dc6-bf56-ed7fc91e3621.png)
 
 
 
