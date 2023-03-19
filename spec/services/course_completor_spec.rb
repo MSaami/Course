@@ -17,5 +17,11 @@ RSpec.describe CourseCompletor do
         .call
       expect(enroll.reload.next_course_id).to be nil
     end
+
+    it 'raise exception if the user not assigned to the course' do
+      user = create(:user)
+      klass = described_class.new(talent_id: user.id, course_id: 12)
+      expect {klass.call}.to raise_error(CourseCompletor::UserNotAssignedToThisCourseException)
+    end
   end
 end

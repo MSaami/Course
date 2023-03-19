@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       end
       resources :talents, only: [] do
         post :assign_course, on: :member
+        post :complete_course, on: :member
       end
     end
   end
