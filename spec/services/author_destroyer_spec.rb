@@ -7,7 +7,7 @@ RSpec.describe AuthorDestroyer do
       new_author = create(:user)
       courses = create_list(:course, 2, author: author)
 
-      described_class.new(author_id: author.id, replacment_id: new_author.id)
+      described_class.new(author_id: author.id, replacement_id: new_author.id)
         .call
 
       expect(new_author.courses.count).to eq(2)

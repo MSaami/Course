@@ -9,6 +9,10 @@ Rails.application.routes.draw do
         post :assign_course, on: :member
         post :complete_course, on: :member
       end
+
+      resources :authors, only: [] do
+        resources :authors, path: :replacement, only: [:destroy]
+      end
     end
   end
 end

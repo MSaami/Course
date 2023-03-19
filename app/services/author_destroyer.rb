@@ -1,7 +1,7 @@
 class AuthorDestroyer
-  def initialize(author_id:, replacment_id:)
+  def initialize(author_id:, replacement_id:)
     @author_id = author_id
-    @replacment_id = replacment_id
+    @replacement_id = replacement_id
   end
 
   def call
@@ -12,7 +12,7 @@ class AuthorDestroyer
 
   private
   def assign_to_new_author(courses)
-    courses.update_all(author_id: @replacment_id)
+    courses.update_all(author_id: @replacement_id)
   end
 
 

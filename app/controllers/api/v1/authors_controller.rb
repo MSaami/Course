@@ -1,11 +1,5 @@
 class Api::V1::AuthorsController < ApplicationController
   def destroy
-    @author.destroy
+    AuthorDestroyer.new(author_id: params[:author_id], replacement_id: params[:id]).call
   end
-
-  private
-  def set_autor
-    @author = User.find(params[:id])
-  end
-
 end
