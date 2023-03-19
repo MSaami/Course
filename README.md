@@ -20,6 +20,12 @@ ruby -v
 ```shell 
 bundle install
 ```
+## Install Using Docker
+- Install Docker and Docker-Compose
+- Clone the project
+- Run  `docker-compose up -d`
+- The project is on `localhost:3000`
+- You can run test by using `docker-compose exec app rspec`
 
 ## DB Diagram
 
