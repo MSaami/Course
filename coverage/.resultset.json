@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/mehrdad/projects/elearnio/spec/models/course_spec.rb": {
+      "/Rails-Docker/spec/models/course_spec.rb": {
         "lines": [
           null,
           null,
@@ -16,7 +16,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/spec/rails_helper.rb": {
+      "/Rails-Docker/spec/rails_helper.rb": {
         "lines": [
           null,
           null,
@@ -92,7 +92,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/config/environment.rb": {
+      "/Rails-Docker/config/environment.rb": {
         "lines": [
           null,
           null,
@@ -103,7 +103,7 @@
           1
         ]
       },
-      "/home/mehrdad/projects/elearnio/config/application.rb": {
+      "/Rails-Docker/config/application.rb": {
         "lines": [
           null,
           null,
@@ -149,7 +149,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/config/boot.rb": {
+      "/Rails-Docker/config/boot.rb": {
         "lines": [
           null,
           null,
@@ -159,7 +159,7 @@
           1
         ]
       },
-      "/home/mehrdad/projects/elearnio/config/environments/test.rb": {
+      "/Rails-Docker/config/environments/test.rb": {
         "lines": [
           null,
           null,
@@ -225,7 +225,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/config/initializers/application_controller_renderer.rb": {
+      "/Rails-Docker/config/initializers/application_controller_renderer.rb": {
         "lines": [
           null,
           null,
@@ -238,7 +238,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/config/initializers/backtrace_silencers.rb": {
+      "/Rails-Docker/config/initializers/backtrace_silencers.rb": {
         "lines": [
           null,
           null,
@@ -252,7 +252,7 @@
           1
         ]
       },
-      "/home/mehrdad/projects/elearnio/config/initializers/cors.rb": {
+      "/Rails-Docker/config/initializers/cors.rb": {
         "lines": [
           null,
           null,
@@ -273,7 +273,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/config/initializers/filter_parameter_logging.rb": {
+      "/Rails-Docker/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -285,7 +285,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/config/initializers/inflections.rb": {
+      "/Rails-Docker/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -306,7 +306,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/config/initializers/mime_types.rb": {
+      "/Rails-Docker/config/initializers/mime_types.rb": {
         "lines": [
           null,
           null,
@@ -315,7 +315,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/config/initializers/wrap_parameters.rb": {
+      "/Rails-Docker/config/initializers/wrap_parameters.rb": {
         "lines": [
           null,
           null,
@@ -335,7 +335,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/spec/factories.rb": {
+      "/Rails-Docker/spec/factories.rb": {
         "lines": [
           null,
           null,
@@ -371,7 +371,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/config/routes.rb": {
+      "/Rails-Docker/config/routes.rb": {
         "lines": [
           null,
           null,
@@ -395,7 +395,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/spec/support/api_helpers.rb": {
+      "/Rails-Docker/spec/support/api_helpers.rb": {
         "lines": [
           null,
           null,
@@ -409,7 +409,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/models/course.rb": {
+      "/Rails-Docker/app/models/course.rb": {
         "lines": [
           null,
           null,
@@ -427,7 +427,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/models/application_record.rb": {
+      "/Rails-Docker/app/models/application_record.rb": {
         "lines": [
           null,
           null,
@@ -436,34 +436,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/spec/models/learning_path_enrollment_spec.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/home/mehrdad/projects/elearnio/app/models/learning_path_enrollment.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/home/mehrdad/projects/elearnio/spec/models/learning_path_spec.rb": {
+      "/Rails-Docker/spec/models/learning_path_enrollment_spec.rb": {
         "lines": [
           null,
           null,
@@ -472,11 +445,38 @@
           1,
           1,
           2,
+          2,
           null,
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/models/learning_path.rb": {
+      "/Rails-Docker/app/models/learning_path_enrollment.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Rails-Docker/spec/models/learning_path_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Rails-Docker/app/models/learning_path.rb": {
         "lines": [
           null,
           null,
@@ -498,7 +498,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/spec/models/user_spec.rb": {
+      "/Rails-Docker/spec/models/user_spec.rb": {
         "lines": [
           null,
           null,
@@ -513,7 +513,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/models/user.rb": {
+      "/Rails-Docker/app/models/user.rb": {
         "lines": [
           null,
           null,
@@ -534,7 +534,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/spec/requests/api/v1/authors_spec.rb": {
+      "/Rails-Docker/spec/requests/api/v1/authors_spec.rb": {
         "lines": [
           null,
           null,
@@ -555,7 +555,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/spec/requests/api/v1/courses_spec.rb": {
+      "/Rails-Docker/spec/requests/api/v1/courses_spec.rb": {
         "lines": [
           null,
           null,
@@ -633,7 +633,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/spec/requests/api/v1/learning_path_enrollments_spec.rb": {
+      "/Rails-Docker/spec/requests/api/v1/learning_path_enrollments_spec.rb": {
         "lines": [
           null,
           null,
@@ -666,7 +666,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/spec/requests/api/v1/learning_path_spec.rb": {
+      "/Rails-Docker/spec/requests/api/v1/learning_path_spec.rb": {
         "lines": [
           null,
           null,
@@ -716,7 +716,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/spec/requests/api/v1/talents_spec.rb": {
+      "/Rails-Docker/spec/requests/api/v1/talents_spec.rb": {
         "lines": [
           null,
           null,
@@ -755,7 +755,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/spec/services/author_destroyer_spec.rb": {
+      "/Rails-Docker/spec/services/author_destroyer_spec.rb": {
         "lines": [
           null,
           null,
@@ -777,7 +777,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/services/author_destroyer.rb": {
+      "/Rails-Docker/app/services/author_destroyer.rb": {
         "lines": [
           null,
           null,
@@ -801,7 +801,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/spec/services/course_completor_spec.rb": {
+      "/Rails-Docker/spec/services/course_completor_spec.rb": {
         "lines": [
           null,
           null,
@@ -834,7 +834,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/services/course_completor.rb": {
+      "/Rails-Docker/app/services/course_completor.rb": {
         "lines": [
           null,
           null,
@@ -867,7 +867,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/spec/services/learning_path_enrollment_manager_spec.rb": {
+      "/Rails-Docker/spec/services/learning_path_enrollment_manager_spec.rb": {
         "lines": [
           null,
           null,
@@ -889,7 +889,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/services/learning_path_enrollment_manager.rb": {
+      "/Rails-Docker/app/services/learning_path_enrollment_manager.rb": {
         "lines": [
           null,
           null,
@@ -916,7 +916,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/spec/services/learning_path_manager_spec.rb": {
+      "/Rails-Docker/spec/services/learning_path_manager_spec.rb": {
         "lines": [
           null,
           null,
@@ -940,7 +940,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/services/learning_path_manager.rb": {
+      "/Rails-Docker/app/services/learning_path_manager.rb": {
         "lines": [
           null,
           null,
@@ -973,7 +973,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/controllers/api/v1/authors_controller.rb": {
+      "/Rails-Docker/app/controllers/api/v1/authors_controller.rb": {
         "lines": [
           null,
           null,
@@ -988,7 +988,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/controllers/application_controller.rb": {
+      "/Rails-Docker/app/controllers/application_controller.rb": {
         "lines": [
           null,
           null,
@@ -1022,7 +1022,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/controllers/api/v1/courses_controller.rb": {
+      "/Rails-Docker/app/controllers/api/v1/courses_controller.rb": {
         "lines": [
           null,
           null,
@@ -1068,7 +1068,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/serializers/course_serializer.rb": {
+      "/Rails-Docker/app/serializers/course_serializer.rb": {
         "lines": [
           null,
           null,
@@ -1081,7 +1081,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/serializers/user_serializer.rb": {
+      "/Rails-Docker/app/serializers/user_serializer.rb": {
         "lines": [
           null,
           null,
@@ -1091,7 +1091,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/controllers/api/v1/learning_path_enrollments_controller.rb": {
+      "/Rails-Docker/app/controllers/api/v1/learning_path_enrollments_controller.rb": {
         "lines": [
           null,
           null,
@@ -1115,7 +1115,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/controllers/api/v1/learning_paths_controller.rb": {
+      "/Rails-Docker/app/controllers/api/v1/learning_paths_controller.rb": {
         "lines": [
           null,
           null,
@@ -1158,7 +1158,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/serializers/learning_path_serializer.rb": {
+      "/Rails-Docker/app/serializers/learning_path_serializer.rb": {
         "lines": [
           null,
           null,
@@ -1171,7 +1171,7 @@
           null
         ]
       },
-      "/home/mehrdad/projects/elearnio/app/controllers/api/v1/talents_controller.rb": {
+      "/Rails-Docker/app/controllers/api/v1/talents_controller.rb": {
         "lines": [
           null,
           null,
@@ -1208,6 +1208,6 @@
         ]
       }
     },
-    "timestamp": 1679246341
+    "timestamp": 1679250847
   }
 }
