@@ -1,4 +1,5 @@
 # Course
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
 
 A project which tracks Course, Learning Paths and Talents.
 
