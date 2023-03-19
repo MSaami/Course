@@ -1,5 +1,5 @@
 class Api::V1::LearningPathsController < ApplicationController
-  before_action :set_learning_path, only: [:destroy]
+  before_action :set_learning_path, only: [:destroy, :update]
   def index
     paths = LearningPath.all
     render json: LearningPathSerializer.new(paths).serializable_hash

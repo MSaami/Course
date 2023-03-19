@@ -1,6 +1,6 @@
 class LearningPath < ApplicationRecord
   has_many :courses, -> {order(order_in_learning_path: :asc)}
-  has_many :learning_path_enrollments
+  has_many :learning_path_enrollments, dependent: :destroy
   has_many :talents, through: :learning_path_enrollments
 
   validates :name, presence: true
