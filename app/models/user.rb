@@ -6,4 +6,8 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   validates :email, presence: true, uniqueness: true
+
+  def next_course_for(learning_path_id)
+    learning_path_enrollments.find_by(learning_path_id: learning_path_id)&.next_course
+  end
 end

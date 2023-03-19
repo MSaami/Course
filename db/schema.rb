@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2023_03_18_195757) do
   create_table "learning_path_enrollments", force: :cascade do |t|
     t.bigint "talent_id", null: false
     t.bigint "learning_path_id", null: false
-    t.bigint "next_course_id", null: false
+    t.bigint "next_course_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["learning_path_id"], name: "index_learning_path_enrollments_on_learning_path_id"

@@ -12,4 +12,11 @@ RSpec.describe "Api::V1::Talents", type: :request do
     end
   end
 
+  describe 'POST complete the course' do
+    it 'client can mark a course completed' do
+      # user = create(:user)
+
+    end
+  end
+
 end
