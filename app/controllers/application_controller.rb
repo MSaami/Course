@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ApplicationController < ActionController::API
   rescue_from ActiveRecord::RecordInvalid, with: :show_record_errors
   rescue_from ActiveRecord::RecordNotFound, with: :not_found_response
@@ -10,19 +12,19 @@ class ApplicationController < ActionController::API
 
   def error_response(errors:, status:)
     render json: {
-      errors: errors,
+      errors: errors
     }, status: status
   end
 
   def not_found_response
-    render json: {}, status: 404
+    render json: {}, status: :not_found
   end
 
   def course_is_empty
-    error_response(errors: ['Cannot create learning path without courses'], status: 422)
+    error_response(errors: ["Cannot create learning path without courses"], status: 422)
   end
 
   def course_is_not_user
-    error_response(errors: ['Course does not assigned to the talent'], status: 422)
+    error_response(errors: ["Course does not assigned to the talent"], status: 422)
   end
 end

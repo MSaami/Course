@@ -1,33 +1,39 @@
-class Api::V1::LearningPathsController < ApplicationController
-  before_action :set_learning_path, only: [:destroy, :update]
-  def index
-    paths = LearningPath.all
-    render json: LearningPathSerializer.new(paths).serializable_hash
-  end
+# frozen_string_literal: true
 
-  def create
-    LearningPathManager
-      .new(**learning_path_params.to_h.symbolize_keys)
-      .call
-  end
+module Api
+  module V1
+    class LearningPathsController < ApplicationController
+      before_action :set_learning_path, only: %i[destroy update]
+      def index
+        paths = LearningPath.all
+        render json: LearningPathSerializer.new(paths).serializable_hash
+      end
 
-  def update
-    LearningPathManager
-      .new(**learning_path_params.to_h.symbolize_keys)
-      .call
-  end
+      def create
+        LearningPathManager
+          .new(**learning_path_params.to_h.symbolize_keys)
+          .call
+      end
 
-  def destroy
-    @learning_path.destroy
-  end
+      def update
+        LearningPathManager
+          .new(**learning_path_params.to_h.symbolize_keys)
+          .call
+      end
 
-  private
+      def destroy
+        @learning_path.destroy
+      end
 
-  def learning_path_params
-    params.require(:learning_path).permit(:name, courses: [])
-  end
+      private
 
-  def set_learning_path
-    @learning_path = LearningPath.find(params[:id])
+      def learning_path_params
+        params.require(:learning_path).permit(:name, courses: [])
+      end
+
+      def set_learning_path
+        @learning_path = LearningPath.find(params[:id])
+      end
+    end
   end
 end

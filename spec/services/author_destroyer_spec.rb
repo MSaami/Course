@@ -1,17 +1,18 @@
-require 'rails_helper'
+# frozen_string_literal: true
+
+require "rails_helper"
 
 RSpec.describe AuthorDestroyer do
-  describe '.call' do
-    it 'removes the author and replace all courses' do
+  describe ".call" do
+    it "removes the author and replace all courses" do
       author = create(:user)
       new_author = create(:user)
       courses = create_list(:course, 2, author: author)
 
       described_class.new(author_id: author.id, replacement_id: new_author.id)
-        .call
+                     .call
 
       expect(new_author.courses.count).to eq(2)
     end
   end
 end
-

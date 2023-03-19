@@ -1,9 +1,10 @@
-require 'rails_helper'
+# frozen_string_literal: true
+
+require "rails_helper"
 
 RSpec.describe LearningPathEnrollmentManager do
-
-  describe 'call' do
-    it 'enrolls talent to learning path' do
+  describe "call" do
+    it "enrolls talent to learning path" do
       user = create(:user)
       learning_path = create(:learning_path)
       described_class.new(learning_path_id: learning_path.id, talent_id: user.id).call
@@ -14,6 +15,4 @@ RSpec.describe LearningPathEnrollmentManager do
       expect(LearningPathEnrollment.last.next_course_id).to eq(first_course.id)
     end
   end
-
-
 end

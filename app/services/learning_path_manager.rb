@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class LearningPathManager
   class CourseIsEmptyException < StandardError; end
 
@@ -8,6 +10,7 @@ class LearningPathManager
 
   def call
     raise CourseIsEmptyException if @courses.compact_blank!.blank?
+
     learning_path = LearningPath.find_or_initialize_by(name: @name)
     learning_path.save!
     course_data = make_course_data(learning_path.id)
@@ -15,12 +18,12 @@ class LearningPathManager
   end
 
   private
+
   def make_course_data(learning_path_id)
     data = {}
     @courses.each_with_index do |id, index|
-      data[id] = {order_in_learning_path: index, learning_path_id: learning_path_id}
+      data[id] = { order_in_learning_path: index, learning_path_id: learning_path_id }
     end
     data
   end
-
 end

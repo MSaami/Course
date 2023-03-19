@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AuthorDestroyer
   def initialize(author_id:, replacement_id:)
     @author_id = author_id
@@ -11,9 +13,8 @@ class AuthorDestroyer
   end
 
   private
+
   def assign_to_new_author(courses)
     courses.update_all(author_id: @replacement_id)
   end
-
-
 end

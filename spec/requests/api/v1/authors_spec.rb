@@ -1,8 +1,10 @@
-require 'rails_helper'
+# frozen_string_literal: true
+
+require "rails_helper"
 
 RSpec.describe "Api::V1::Authors", type: :request do
-  describe 'DELETE delete author' do
-    it 'delete author and replace course' do
+  describe "DELETE delete author" do
+    it "delete author and replace course" do
       author = create(:user)
       courses = create_list(:course, 2, author: author)
       new_author = create(:user)

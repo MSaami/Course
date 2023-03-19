@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class LearningPath < ApplicationRecord
-  has_many :courses, -> {order(order_in_learning_path: :asc)}
+  has_many :courses, -> { order(order_in_learning_path: :asc) }
   has_many :learning_path_enrollments, dependent: :destroy
   has_many :talents, through: :learning_path_enrollments
 
@@ -13,6 +15,4 @@ class LearningPath < ApplicationRecord
     next_index = courses.find_index(Course.find(course_id)) + 1
     courses[next_index]
   end
-
-
 end
