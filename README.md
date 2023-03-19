@@ -1,4 +1,5 @@
 # Course
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
 
 A project which tracks Course, Learning Paths and Talents.
 
@@ -24,6 +25,8 @@ bundle install
 
 ![DB](https://user-images.githubusercontent.com/27271223/226191721-02545369-4aeb-4dc6-bf56-ed7fc91e3621.png)
 
+## Test Coverage
+![image](https://user-images.githubusercontent.com/27271223/226194927-3dc08cbf-a096-4e20-ae43-c8ecbd187516.png)
 
 
 ## APIs
