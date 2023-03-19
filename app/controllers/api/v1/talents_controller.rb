@@ -2,7 +2,7 @@ class Api::V1::TalentsController < ApplicationController
   before_action :set_talent, only: [:assign_course]
 
   def assign_course
-    @talent.course_ids = course_params[:ids]
+    @talent.course_enrollment_ids = course_params[:ids]
   end
 
   def complete_course

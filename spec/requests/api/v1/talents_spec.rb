@@ -8,7 +8,7 @@ RSpec.describe "Api::V1::Talents", type: :request do
       post "/api/v1/talents/#{user.id}/assign_course", params: {courses: {ids: courses.map(&:id)}}
 
       expect(response).to have_http_status(204)
-      expect(user.courses.count).to eq 3
+      expect(user.course_enrollments.count).to eq 3
     end
   end
 
